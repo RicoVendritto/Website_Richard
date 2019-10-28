@@ -1,3 +1,10 @@
+body {
+  font-family: Roboto, sans-serif;
+  background-image: url('resources/background.png');
+  background-size: cover;
+  background-position: center;
+}
+
 .white {
   font-family: Roboto, sans-serif;
   background-image: url('resources/background.png');
