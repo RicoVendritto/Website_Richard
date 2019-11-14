@@ -29,8 +29,9 @@ let resetControlArray = () => {
 }
 
 //Sound effect created with the assistance of repl.it user: -Aloeb83 at: https://repl.it/talk/learn/Coin-Flipper-with-Sound-using-HTML-and-JavaScript/8003
-//Soujd effect is royalty free download from Freesound.org  user: f4ngy at: https://freesound.org/people/f4ngy/sounds/240776/
-let cardFlipSound = new Audio("resources/cardflip.wav");
+//Sound effect is royalty free download from Freesound.org  user: f4ngy at: https://freesound.org/people/f4ngy/sounds/240776/
+//SoundCrazy is a self recorded audio file that replaced the previous one. 
+let cardFlipSound = new Audio("resources/SoundCrazy.mp3");
 
 let checkControl = () => {
 	if (controlArray[0] === controlArray[1]) {
@@ -48,7 +49,7 @@ let checkControl = () => {
 	}
 }
 
-//Sometimes the browser executes this function twice with the same set of cards and increases the score with 2 points instead of 1 -> I cannot figure out why. 
+//Sometimes the browser executes this function twice with the same set of cards and increases the score with 2 points instead of 1 -> I cannot figure out why.
 //Only tested with Chrome. I suspect it has to do with the delay function.
 let checkForMatch = () => {
 	if (cardsInPlay.length === 2) {
@@ -58,7 +59,7 @@ let checkForMatch = () => {
 		} else {
 			alert("Sorry Mate! Try Again!");
 		}
-	} 
+	}
 }
 
 
@@ -80,7 +81,7 @@ function flipCard() {
 /*main.js:77 Uncaught TypeError: this.getAttribute is not a function
     at HTMLImageElement.flipCard (main.js:77)*/
 /*
-//I think I understand the difference. The bottom one (arrow function) is a function expression wherea the top one is a function declaration. 
+//I think I understand the difference. The bottom one (arrow function) is a function expression wherea the top one is a function declaration.
 //Hence, is not affected by the top-to-bottom flow of code (hoisting?)
 let flipCard = () => {
 	let cardId = this.getAttribute("data");

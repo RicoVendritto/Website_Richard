@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Richard Braamburg</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="style.css" type="text/css" rel="stylesheet">
+	<script async src="script.js"></script>
+  </head>
+  <body>
+	<body onload="rowNumbers()">
+    
+    <header class="container">
+      <div class="row">
+        <h1 class="col-sm-6">Richard Braamburg</h1>
+        <nav class="col-sm-6 text-right">
+          <a href="../index.html">Home</a>
+        </nav>
+      </div>
+    </header>
+    
+    <section class="jumbotron">
+      <div class="container">
+      	<div class="row">
+        	<h2>Project</h2>
+      	</div>
+      </div>
+    </section>
+    
+    <section class="container">
+      <div class="row">
+        <div class="col-sm-6" id="magicArray">
+			<p class="font-weight-bold">Array Add/Delete/Sort</p>
+			<p id="output"></p>
+			<br>
+			<button class="button" id="button1">Add new number to Array</button><br>
+			<button class="button" id="button2">Add existing number to Array</button><br>
+			<button class="button" id="button6">Remove first number Array</button><br>
+			<button class="button" id="button3">Remove last number Array</button><br>
+			<button class="button" id="button4">Sort Array Low > High</button><br>
+			<button class="button" id="button5">Sort Array High > Low</button>
+        </div>
+        <div class="col-sm-6" id="magicTable">
+			<table id="myTable">
+				<tr>
+					<th>Row#</th>
+					<th>Firstname</td>
+					<th>Surname</td>
+					<th>Total Points</td>
+				</tr>
+				<tr>
+					<td>Johan</td>
+					<td>Cruijff</td>
+					<td>54</td>
+				</tr>
+				<tr>
+					<td>Jack</td>
+					<td>Sparrow</td>
+					<td>47</td>
+				</tr>
+				<tr>
+					<td>Willem</td>
+					<td>van Oranje</td>
+					<td>80</td>
+				</tr>
+				<tr>
+					<td>Selah</td>
+					<td>Sue</td>
+					<td>93</td>
+				</tr>
+			</table>
+			<br>
+				<form id="frm1" action="">
+					<table id="invoertabel">
+						<tr>
+							<td>Firstname:</td>
+							<td><input type="text" name="fname" required></td>
+						</tr>
+						<tr>
+							<td>Surname:</td>
+							<td><input type="text" name="lname" required></td>
+						</tr>
+						<tr>
+							<td>Total Points:</td>
+							<td><input type="text" name="points" required></td>
+						</tr>
+					</table>
+				</form>
+			<input class="button" type="button" id="newButton" value="Add Entry"><br><br>
+			<input type="text" id="rowID" placeholder="Please enter the row number you wish to delete"><br>
+			<input class="button" type="button" id="delButton" value="Erase Row">
+			<br>
+			<p id="info"></p>
+      </div>
+    </section>
+        
+	<footer class="container">
+      <div class="row">
+        <p class="col-sm-4">&copy; 2019 Richard Braamburg</p>
+        <div class="col-sm-8 text-right">
+			<a href="https://www.linkedin.com/in/richardbraamburg">LinkedIn</a>
+			<a href="https://github.com/RicoVendritto">GitHub</a>
+			<a href="https://my.indeed.com/p/richardb-6hys0hy">Indeed</a>
+			<a href="mailto:richard.braamburg@gmail.com">Email</a>
+		</div>
+      </div>
+    </footer>  
+    
+  </body>
+</html>
